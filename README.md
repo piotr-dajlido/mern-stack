@@ -27,3 +27,12 @@
 > ### CLIENT
 > `cd client`
 > `/client$ npm run build`
+
+# Test
+> ### SERVER
+> `cd server`
+> `/server$ npm run test`
+
+> ### CLIENT
+> `cd client`
+> `/client$ npm run test`
