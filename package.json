@@ -1,0 +1,24 @@
+{
+  "name": "menr-stack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/src/index.js",
+  "scripts": {
+    "start" : "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piotr-dajlido/menr-stack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/piotr-dajlido/menr-stack/issues"
+  },
+  "homepage": "https://github.com/piotr-dajlido/menr-stack#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
