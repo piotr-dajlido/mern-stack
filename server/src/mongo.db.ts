@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import {ReplaySubject, Subject} from 'rxjs';
+import {ReplaySubject} from 'rxjs';
 
 export class MongoDB {
 
