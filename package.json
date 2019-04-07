@@ -2,9 +2,12 @@
   "name": "menr-stack",
   "version": "1.0.0",
   "description": "",
-  "main": "server/src/index.js",
+  "main": "server/dist/index.js",
   "scripts": {
-    "start" : "node .",
+    "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "node .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +23,11 @@
   "homepage": "https://github.com/piotr-dajlido/menr-stack#readme",
   "dependencies": {
     "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.16.1",
+    "@types/node": "^11.13.0",
+    "tslint": "^5.15.0",
+    "typescript": "^3.4.2"
   }
 }
