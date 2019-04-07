@@ -185,6 +185,7 @@ typings/
 
 # production
 server/build
+server/public
 client/build
 
 # misc

@@ -5,7 +5,10 @@
 
 # Fast start
 `./start.sh` 
- > Builds react app, copies files to express static directory, starts the express server 
+ > 1. Downloads dependencies 
+ > 2. Builds react app
+ > 3. Copies files to express static directory 
+ > 4. Starts express server at `localhost:8080` 
 
 # Development
 > ### SERVER
