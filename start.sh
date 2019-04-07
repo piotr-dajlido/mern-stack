@@ -10,7 +10,6 @@ if [[ ! -d ${SERVER_MODULES} ]]; then
   ( cd server && npm install )
 fi
 
-
 cd client
 npm run build
 

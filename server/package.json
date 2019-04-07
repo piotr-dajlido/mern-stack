@@ -2,7 +2,7 @@
   "name": "mern-stack-server",
   "version": "1.0.0",
   "description": "",
-  "main": "build/index.js",
+  "main": "build/server.js",
   "scripts": {
     "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
     "build": "tsc",
@@ -22,7 +22,11 @@
   },
   "homepage": "https://github.com/piotr-dajlido/mern-stack#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "@types/mongoose": "^5.3.24",
+    "express": "^4.16.4",
+    "mongodb": "^3.2.3",
+    "mongoose": "^5.4.22",
+    "rxjs": "^6.4.0"
   },
   "devDependencies": {
     "@types/express": "^4.16.1",
