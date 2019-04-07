@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-import {Subject} from 'rxjs';
+import {ReplaySubject, Subject} from 'rxjs';
 
 export class MongoDB {
 
@@ -7,7 +7,7 @@ export class MongoDB {
     return this.onConnectedSubject.asObservable().toPromise();
   }
 
-  public onConnectedSubject: Subject<void> = new Subject();
+  public onConnectedSubject: ReplaySubject<void> = new ReplaySubject(1);
 
   constructor() {
     mongoose.connect('mongodb://localhost/db', {useNewUrlParser: true});
@@ -20,5 +20,4 @@ export class MongoDB {
       this.onConnectedSubject.complete();
     });
   }
-
 }

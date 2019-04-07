@@ -18,4 +18,3 @@ rm -R public/*
 cp -R ../client/build/. public/
 cd ../server
 npm run start
-
