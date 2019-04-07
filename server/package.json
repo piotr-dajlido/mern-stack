@@ -1,8 +1,8 @@
 {
-  "name": "menr-stack",
+  "name": "mern-stack-server",
   "version": "1.0.0",
   "description": "",
-  "main": "server/dist/index.js",
+  "main": "build/index.js",
   "scripts": {
     "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
     "build": "tsc",
@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/piotr-dajlido/menr-stack.git"
+    "url": "git+https://github.com/piotr-dajlido/mern-stack.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/piotr-dajlido/menr-stack/issues"
+    "url": "https://github.com/piotr-dajlido/mern-stack/issues"
   },
-  "homepage": "https://github.com/piotr-dajlido/menr-stack#readme",
+  "homepage": "https://github.com/piotr-dajlido/mern-stack#readme",
   "dependencies": {
     "express": "^4.16.4"
   },
